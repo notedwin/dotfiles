@@ -1,0 +1,241 @@
+: 1704767913:0;sudo apt install curl
+: 1704767913:0;curl -fsSL https://tailscale.com/install.sh | sh
+: 1704767913:0;sudo tailscale up --ssh
+: 1704767913:0;dig notedwin.local
+: 1704767913:0;ssh root@192.168.0.1
+: 1704767913:0;cd Downloads/
+: 1704767913:0;chmod +x woeusb-5.2.4.bash
+: 1704767913:0;sudo apt install     bash     dosfstools     findutils     grep     gawk     grub-common     grub-pc-bin     ntfs-3g     p7zip-full     parted     util-linux     wget     wimtools
+: 1704767913:0;sudo ./woeusb-5.2.4.bash --help
+: 1704767913:0;sudo ./woeusb-5.2.4.bash --device
+: 1704767913:0;sudo ./woeusb-5.2.4.bash -device
+: 1704767913:0;sudo ./woeusb-5.2.4.bash --device Win10_22H2_English_x64v1.iso /dev/sdc1
+: 1704767913:0;sudo ./woeusb-5.2.4.bash --device Win10_22H2_English_x64v1.iso /dev/sdc
+: 1704767913:0;sudo ./woeusb-5.2.4.bash --device Win10_22H2_English_x64v1.iso /dev/sdb
+: 1704767913:0;which
+: 1704767913:0;which sh
+: 1704767913:0;which $SHELL
+: 1704767913:0;sudo apt install tmux neovim zsh git
+: 1704767913:0;nvim .zshenv
+: 1704767913:0;chsh -s $(which zsh)
+: 1704767913:0;chsh -s zsh
+: 1704767913:0;sudo apt install tmux neovim zsh git fzf
+: 1704767913:0;cat /usr/share/fzz
+: 1704767913:0;cat /usr/share/fzf
+: 1704767913:0;cat /usr/share/llslsl
+: 1704767913:0;nvim zsh/.zsh_rc
+: 1704767913:0;cd
+: 1704767913:0;mkdir -p .dotfiles/zsh
+: 1704767913:0;cd .dotfiles/zsh/
+: 1704767913:0;touch .zsh_rc
+: 1704767913:0;stow --adopt -nv git
+: 1704767913:0;sudo apt install stow
+: 1704767913:0;stow --adopt -nv
+: 1704767913:0;stow --adopt -nv zsh
+: 1704767913:0;echo $ZDOTDIR
+: 1704767913:0;cd ../
+: 1704767913:0;cat .zshenv
+: 1704767913:0;compinit
+: 1704767913:0;cd ../../.dotfiles/.config/zsh/
+: 1704767913:0;man dircolors
+: 1704767913:0;rm .zsh_rc 
+: 1704767913:0;cd ../.dotfiles/
+: 1704767913:0;cd ~/dotfiles
+: 1704767913:0;stow --adopt -t ~/.config zsh
+: 1704767913:0;mv -r .config/zsh/ zsh/
+: 1704767913:0;mv .config/zsh/* zsh/
+: 1704767913:0;mkdir zsh
+: 1704767913:0;mv .config/zsh/.zsh_rc zsh/.zsh_rc
+: 1704767913:0;stow --adopt -t ~/.config zsh -nv
+: 1704767913:0;stow --adopt -t /home/notedwin/.config zsh -nv
+: 1704767913:0;stow -t /home/notedwin/.config zsh -nv
+: 1704767913:0;echo \$XDG_CONFIG_HOME
+: 1704767913:0;echo $XDG_CONFIG_HOME
+: 1704767913:0;stow -t $XDG_CONFIG_HOME zsh -nv
+: 1704767913:0;stow -t "$XDG_CONFIG_HOME" zsh -nv
+: 1704767913:0;stow --target=$XDG_CONFIG_HOME zsh -nv
+: 1704767913:0;stow -D zsh
+: 1704767913:0;stow --target="$XDG_CONFIG_HOME" zsh -D -nv
+: 1704767913:0;stow --target=~/.config zsh -D -nv
+: 1704767913:0;stow --target="$XDG_CONFIG_HOME" zsh -nv
+: 1704767913:0;stow --target="$XDG_CONFIG_HOME" zsh
+: 1704767913:0;stow --target="$XDG_CONFIG_HOME" zsh -D
+: 1704767913:0;stow zsh -D
+: 1704767913:0;stow --target="$XDG_CONFIG_HOME" -D zsh
+: 1704767913:0;stow --target="$XDG_CONFIG_HOME" -nv zsh
+: 1704767913:0;stow --target="$XDG_CONFIG_HOME" -nv .config/
+: 1704767913:0;stow --target="$XDG_CONFIG_HOME" .config/
+: 1704767913:0;cd .config/
+: 1704767913:0;cd zsh/
+: 1704767913:0;nvim .zsh_rc
+: 1704767913:0;mv .zsh_rc .zshrc
+: 1704767913:0;nvim .zshrc
+: 1704767913:0;mv ~/.zshenv .zshenv
+: 1704767913:0;rm .zsh_rc
+: 1704767913:0;stow -nv zsh
+: 1704767913:0;stow zsh
+: 1704767913:0;dircolor
+: 1704767913:0;dircolors
+: 1704767913:0;git clone --depth 1 https://github.com/junegunn/fzf.git ~/.config/.fzf
+: 1704767913:0;cd ~/.config/
+: 1704767913:0;ls-la
+: 1704767913:0;mv ~/.fzf.zsh ~/.config/zsh/.fzf.zsh
+: 1704767913:0;./uninstall
+: 1704767913:0;cd ../zsh
+: 1704767913:0;cat .fzf.zsh 
+: 1704767913:0;../.fzf/
+: 1704767913:0;..
+: 1704767913:0;ls 
+: 1704767913:0;cd .fzf/
+: 1704767913:0;install
+: 1704767913:0;./install
+: 1704767913:0;cd ..
+: 1704767913:0;exit: 1704699536:0;exit
+: 1704767913:0;stow --target="$XDG_CONFIG_HOME" -nv .config
+: 1704767913:0;$XDG_CONFIG_HOME
+: 1704767913:0;$HIST_FILE
+: 1704767913:0;cat $HIST_FILE
+: 1704767913:0;echo $HIST_FILE
+: 1704767913:0;sudo apt install powertop
+: 1704767913:0;sudo powertop
+: 1704767913:0;cat /sys/class/power_supply/BAT0/power_now 
+: 1704767913:0;voltage_microvolts
+: 1704767913:0;$voltage_microvolts
+: 1704767913:0;bash
+: 1704767913:0;git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+: 1704767913:0;cd ~
+: 1704767913:0;ks
+: 1704767913:0;p10k configure
+: 1704767913:0;cd .config
+: 1704767913:0;cd zsh
+: 1704767913:0;ls -la
+: 1704767913:0;bash zsh
+: 1704767913:0;grep which
+: 1704767913:0;ls -ld
+: 1704767913:0;whoami
+: 1704767913:0;echo "scale=6; $(cat /sys/class/power_supply/BAT0/power_now) / 1000000" | bc
+: 1704767913:0;acpi -b
+: 1704767913:0;echo "scale=2; $(cat /sys/class/power_supply/BAT0/power_now) / 1000000" | bc
+: 1704767913:0;upower
+: 1704767913:0;powertop
+: 1704767913:0;cat /sys/class/power_supply/BAT0/energy_full
+: 1704767913:0;cat /sys/class/power_supply/BAT0/power_now
+: 1704767913:0;cat /sys/class/power_supply/BAT0/voltage_now 
+: 1704767913:0;awk '{print $1*10^-6 " W"}' /sys/class/power_supply/BAT0/power_now
+: 1704767913:0;awk '{print $1*10^-8 " W"}' /sys/class/power_supply/BAT0/power_now
+: 1704767913:0;awk '{print $1*10^-4 " W"}' /sys/class/power_supply/BAT0/power_now
+: 1704767913:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+: 1704767165:0;fd
+: 1704767320:0;sudo apt install ripgrep
+: 1704767433:0;rg | fzf-tmux --height=90% --reverse --border --preview 'cat {}
+: 1704767436:0;rg | fzf-tmux --height=90% --reverse --border --preview 'cat {}'
+: 1704767536:0;rg | fzf-tmux --height=90% --reverse --border --preview 'cat {}' -p
+: 1704767568:0;rg | fzf-tmux --reverse --border --preview 'cat {}' -p 80%,60%
+: 1704767657:0;rg --color=always --line-number --no-heading --smart-case "${*:-}" |\
+  fzf --ansi \\
+      --color "hl:-1:underline,hl+:-1:underline:reverse" \\
+      --delimiter : \\
+      --preview 'bat --color=always {1} --highlight-line {2}' \\
+      --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' \\
+      --bind 'enter:become(vim {1} +{2})'
+: 1704767914:0;bat
+: 1704767928:0;rg --color=always --line-number --no-heading --smart-case "${*:-}" |\
+  fzf-tmux --ansi \\
+      --reverse \\
+      --border \\
+      --color "hl:-1:underline,hl+:-1:underline:reverse" \\
+      --delimiter : \\
+      --preview 'bat --color=always {1} --highlight-line {2}' \\
+      --bind 'enter:become(nvim {1} +{2})'\
+      -p 80%,60%
+: 1704767934:0;sudo apt install bat
+: 1704768179:0;stty sane
+: 1704768198:0;stty -a | grep intr
+: 1704768397:0;which fzf
+: 1704768925:0;vim
+: 1704769016:0;sh: 1704769539:0;ll
+: 1704769590:0;tldr who
+: 1704769711:0;systemctl-ssh
+: 1704769717:0;systemctl ssh
+: 1704769866:0;tmux
+: 1704770122:0;cargo install --locked zellij
+: 1704770178:0;sudo dpkg --configure -a
+: 1704770184:0;sudo apt install zellij
+: 1704770478:0;tmux -CC
+: 1704770529:0;tmux -C
+: 1704770590:0;tmux new -s notedwin
+: 1704770610:0;tmux -C attach -t notedwin
+: 1704770913:0;tmux a
+: 1704770929:0;tmux a -t notedwin
+: 1704770933:0;ls
+: 1704770941:0;who
+: 1704771718:0;tmux -CC attach -t notedwin
+: 1704771814:0;top
+: 1704772080:0;tmux -CC attach -t base || tmux -CC new -s base
+: 1704772146:0;fzf
+: 1704772388:0;stty -ixon
+: 1704772419:0;bind -p
+: 1704772457:0;stty -ixon -ixoff
+: 1704772654:0;clear
+: 1704772783:0;ssh -XY -F notedwin@192.168.0.125 -Ct 'sh -l -c "exec tmux -CC -u new-session -AD -s notedwin"'
+: 1704772842:0;ssh -XY notedwin@192.168.0.125 -Ct 'sh -l -c "exec tmux -CC -u new-session -AD -s notedwin"'
+: 1704773906:0;rg -g '*glob*' --files ~
+: 1704773912:0;rg -g '*notedwin*' --files ~
+: 1704775121:0;/home/notedwin/.config/zsh/find_file.sh
+: 1704775127:0;chmod +x /home/notedwin/.config/zsh/find_file.sh
+: 1704775437:0;sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \\
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+: 1704775459:0;stow --target="$XDG_CONFIG_HOME" .config -nv
+: 1704775463:0;stow --target="$XDG_CONFIG_HOME" .config
+: 1704776043:0;nvim
+: 1704776141:0;fzf-tmux -p
+: 1704776156:0;fzf-tmux
+: 1704776775:0;rg --files --color=always
+: 1704776790:0;rg --files --color=always ~
+: 1704776983:0;echo "scale=8; $(cat /sys/class/power_supply/BAT0/power_now) / 1000000" | bc
+: 1704776988:0;echo "scale=8; $(cat /sys/class/power_supply/BAT0/voltage_now) / 1000000" | bc
+: 1704777159:0;cat /sys/class/power_supply/BAT0/charge_behaviour
+: 1704777204:0;cat /sys/class/power_supply/BAT0/energy_now
+: 1704777235:0;echo "scale=8; $(cat /sys/class/power_supply/BAT0/energy_now) / 1000000" | bc
+: 1704777249:0;upower -i $(upower -e | grep BAT) | grep "percentage"
+: 1704777269:0;upower -e
+: 1704777286:0;org/freedesktop/UPower/devices/battery_BAT0
+: 1704777300:0;man upower
+: 1704777332:0;upower -e | grep BAT
+: 1704777340:0;cat /org/freedesktop/UPower/devices/battery_BAT0
+: 1704777359:0;upower -i
+: 1704777363:0;upower -i /org/freedesktop/UPower/devices/battery_BAT0
+: 1704777484:0;edit
+: 1704777636:0;zsh
+: 1704777729:0;exit
+: 1704777756:0;zsh
+: 1704777815:0;which
+: 1704777909:0;cd ..
+: 1704777916:0;git clone git@github.com:notedwin/dotfiles.git
+: 1704777972:0;cd .dotfiles
+: 1704777974:0;stow --target="$XDG_CONFIG_HOME" .config
+: 1704777982:0;cd ..
+: 1704777984:0;git clone git@github.com:notedwin/dotfiles.git
+: 1704778006:0;git config credential.helper store
+: 1704778013:0;git config credential.helper
+: 1704778017:0;git config
+: 1704778031:0;git config --l
+: 1704778034:0;git config -l
+: 1704778093:0;gh auth login
+: 1704778100:0;sudo apt install gh
+: 1704778109:0;gh auth login
+: 1704778189:0;ls -la
+: 1704778238:0;git config --l
+: 1704778241:0;git config -l
+: 1704778260:0;cat ~/.gitconfig
+: 1704778283:0;rm .gitconfig
+: 1704778286:0;git config -l
+: 1704778294:0;clear
+: 1704778321:0;git clone git@github.com:notedwin/dotfiles.git
+: 1704778335:0;git clone https://github.com/notedwin/dotfiles.git
+: 1704778338:0;git status
+: 1704778344:0;cd dotfiles
+: 1704778348:0;code .
+: 1704778709:0;nvim
+: 1704778765:0;zsh
+: 1704778786:0;nvim

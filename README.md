@@ -1,9 +1,10 @@
 # edwin does dotfiles
 
-Dotfiles are used to personalize your system.
-Below is an image of what my terminal looks like.
+main commands used:
+`zsh nvim fzf tmux`
 
-I use oh-my-zsh, neovim and tmux.
+Remote server workflow: \
+iterm2+tmux:
+`ssh -XY user@server -Ct 'sh -l -c "exec tmux -CC -u new-session -AD -s notedwin"'`
+
 ![](screen.png)
-
-

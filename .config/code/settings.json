@@ -1,0 +1,175 @@
+{
+	// Visuals
+	"workbench.colorTheme": "Vesper",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.fontAliasing": "antialiased",
+	"workbench.tree.expandMode": "singleClick",
+	"workbench.tree.indent": 4,
+	"window.nativeTabs": true,
+	"window.title": "${activeEditorMedium}${separator}${rootName}",
+	"window.titleBarStyle": "native",
+	"window.commandCenter": true,
+	// 'Berkeley Mono Trial',
+	"editor.fontFamily": "'Monaspace Neon', 'Fira Code', monospace",
+	"editor.minimap.enabled": false,
+	"editor.fontLigatures": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.fontSize": 12,
+	// "editor.lineHeight": 16,
+	// "editor.letterSpacing": -0.25,
+	"editor.fontWeight": "300",
+	"editor.cursorWidth": 5,
+	"editor.tabSize": 4,
+
+	// Editor
+	"editor.tabCompletion": "on",
+	"editor.suggestSelection": "first",
+	"editor.cursorBlinking": "smooth",
+	// "editor.cursorSmoothCaretAnimation": "on",
+	"editor.guides.bracketPairs": "active",
+	"editor.inlineSuggest.enabled": true,
+	"editor.lineNumbers": "interval",
+	"editor.stickyScroll.enabled": true,
+	"editor.hover.sticky": true,
+	"editor.wordWrap": "on",
+	"editor.cursorStyle": "block",
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.smoothScrolling": true,
+	"explorer.confirmDragAndDrop": false,
+
+	"files.eol": "\n",
+	"files.autoSave": "afterDelay",
+	"files.exclude": {
+		"**/.classpath": true,
+		"**/.project": true,
+		"**/.settings": true,
+		"**/.factorypath": true
+	},
+
+	// extras
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"git.untrackedChanges": "separate",
+	"terminal.external.linuxExec": "zsh",
+	"terminal.integrated.persistentSessionReviveProcess": "never",
+	"terminal.integrated.tabs.enabled": true,
+
+	"apc.activityBar": {
+		"position": "bottom",
+		"hideSettings": true,
+		"size": 30
+	},
+	"apc.font.family": "'Monaspace Neon', 'Fira Code'",
+	"apc.monospace.font.family": "'Monaspace Neon', 'Fira Code'",
+	"apc.statusBar": {
+		"position": "editor-bottom",
+		"height": 18,
+		"fontSize": 12
+	},
+
+	// Cusom css
+	"apc.stylesheet": {
+		".sidebar > .composite": "height: 14px !important",
+		".title-label": "display: none !important",
+		".title-actions": "display: none !important",
+		".tabs-and-actions-container > .editor-actions": "display: none !important",
+		".titlebar-center": "display: none !important",
+		".titlebar-right": "display: none !important",
+		".inline-tabs-placeholder": "display: none !important",
+		".split-view-view .visible": "background-color: #110f17 !important"
+	},
+
+	"launch": {
+		"configurations": [],
+		"compounds": []
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": true,
+		"markdown": true,
+		"scminput": false,
+		"yaml": true,
+		"c": true,
+		"html": true,
+		"python": true,
+		"javascript": true,
+		"terraform": true,
+		"rust": true,
+		"cpp": true,
+		"makefile": true,
+		"dockercompose": true
+	},
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 0, UseTab: Always, TabWidth: 2}",
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[rust]": {
+		"editor.defaultFormatter": "rust-lang.rust-analyzer"
+	},
+	"[nginx]": {
+		"editor.defaultFormatter": "raynigon.nginx-formatter"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[dockercompose]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "mtxr.sqltools"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+
+	"remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
+	"remote.SSH.configFile": "/var/folders/9h/gskxtpqj25jfhy8v7233d3kc0000gn/T/gitpod_ssh_config-52391-tan6uLAHWTBe",
+	"security.workspace.trust.untrustedFiles": "open",
+	"nginx-conf-hint.format.align": true,
+	"caddyfile.executable": "/opt/homebrew/bin/caddy",
+	"prettier.useTabs": true,
+	"[python]": {
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "explicit",
+			"source.organizeImports": "explicit"
+		},
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+	"explorer.confirmDelete": false,
+	"ruff.lint.run": "onSave",
+	"files.associations": {
+		"*.md": "markdown",
+		"*.mdx": "markdown"
+	},
+	"workbench.editor.tabActionLocation": "left",
+	"liveServer.settings.donotVerifyTags": true,
+	"window.zoomLevel": -1
+}
