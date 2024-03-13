@@ -65,8 +65,10 @@ source $ZSH/oh-my-zsh.sh
 bindkey -e
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 
-# Add battery segment to Powerlevel10k theme
-POWERLEVEL9K_CUSTOM_BATTERY="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | awk '/percentage/ {printf \" %s%%\", \$2} /energy-rate/ {printf \" %.1fW\", \$2}'"
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=("${POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS[@]}" custom_battery)
+# if device has a battery, show battery percentage and charging wattage in right prompt
+if [[ -e /sys/class/power_supply/BAT0 ]]; then
+  POWERLEVEL9K_CUSTOM_BATTERY="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | awk '/percentage/ {printf \" %s%%\", \$2} /energy-rate/ {printf \" %.1fW\", \$2}'"
+  POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=("${POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS[@]}" custom_battery)
+fi
 
-# upower -i /org/freedesktop/UPower/devices/battery_BAT0 | awk '/percentage/ {print "Battery Percentage:", $2} /energy-rate/ {print "Charging Wattage:", $2, $3}'
+echo 'eval "$(atuin init zsh)"'

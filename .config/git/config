@@ -7,5 +7,20 @@
 [credential "https://gist.github.com"]
         helper = 
         helper = !/usr/bin/gh auth git-credential
+[core]
+        excludesfile = ~/.config/.gitignore
 [color]
 	ui = auto
+[merge]
+        conflictStyle = zdiff3
+[rebase]
+        autoStash = true
+[push]
+        autoSetupMerge = true
+        default = current
+[help]
+        autocorrect = 10
+[diff]
+        algorithm = histogram
+[url "git@github.com:"]
+	insteadOf = "https://github.com/"
