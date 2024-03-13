@@ -57,8 +57,6 @@ bindkey -M viins '^S' tmux-pane-rg-fzf
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
 export ZSH="$ZDOTDIR/ohmyzsh"
 source $ZSH/oh-my-zsh.sh
 
@@ -71,4 +69,4 @@ if [[ -e /sys/class/power_supply/BAT0 ]]; then
   POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=("${POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS[@]}" custom_battery)
 fi
 
-echo 'eval "$(atuin init zsh)"'
+eval "$(atuin init zsh)"
